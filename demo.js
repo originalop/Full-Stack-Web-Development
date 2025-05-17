@@ -1,6 +1,10 @@
-function Person(name, age) {
-  this.name = name;
-  this.age = age;
+function Car(brand, model) {
+  this.brand = brand;
+  this.model = model;
+  this.display = ()=>{
+    console.log(`${this.brand} ${this.model}`);
+  };
 }
-const person1 = new Person('Alice', 30);
-console.log(person1.name)
+
+const car1 = new Car('Toyota', 'Camry');
+car1.display(); // Output: Toyota Camry

@@ -27,3 +27,4 @@ function Car(brand, model) {
 const car1 = new Car('Toyota', 'Camry');
 car1.display(); // Output: Toyota Camry
 ```
+---
