@@ -28,3 +28,21 @@ const car1 = new Car('Toyota', 'Camry');
 car1.display(); // Output: Toyota Camry
 ```
 ---
+# Factory function:
+**Defination: A factory function in JavaScript is a function that returns a new object every time it is called. It is a simple and flexible way to create multiple instances of similar objects without using classes or the `new` keyword.**
+>Syntax:
+>```
+>function createUser(name, age) {
+>  return {
+>    name,
+>    age,
+>    greet() {
+>      console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
+>    }
+>  };
+>}
+>const user1 = createUser("Alice", 30);
+>const user2 = createUser("Bob", 25);
+>user1.greet(); // Hi, I'm Alice and I'm 30 years old.
+>user2.greet(); // Hi, I'm Bob and I'm 25 years old.
+>```
